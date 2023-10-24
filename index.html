@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prashant's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Prashant</span>
+                
+                <div>And I am a passionate</div>
+                
+                <!-- <div>Web Developer</div> -->
+                  <!-- Element to contain animated typing -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg_img.png" alt="developer_image" >
+            </div>
+        </section>
+        <hr>
+
+        <!-- -----------------About-------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="profile-photo.jpg" alt="profile-photo">
+                    </div>
+                    <div class="about-col-2">
+                        <h1>About Me</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, 
+                            ad architecto tenetur a quos iure, nesciunt, laborum veniam nihil fugiat iste qui similique.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links">Skills</p>
+                            <p class="tab-links">Experience</p>
+                            <p class="tab-links">Education</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="secondSection">
+            <span class="gray">What I have done till</span>
+            <h1>Work Experience</h1>
+
+            <div class="horizontal-Line">
+                <div class="vertical">
+                    <img class="image-top" src="java.png" alt="Developer image" >
+                    <div class="vertical-title">
+                        Java Developer
+                    </div>
+                    <div class="year">
+                        (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus quam excepturi! Facilis eos ipsa sed sint, corrupti consectetur eveniet molestias repellat? Expedita ratione ab eum aliquid fuga eveniet repudiandae.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="html Developer img" >
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <div class="year">
+                        (2018-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus quam excepturi! Facilis eos ipsa sed sint, corrupti consectetur eveniet molestias repellat? Expedita ratione ab eum aliquid fuga eveniet repudiandae.
+                    </div>
+                </div><div class="vertical">
+                    <img class="image-top" src="javascript.png" alt="javascript Developer image" >
+                    <div class="vertical-title">
+                        JAVASCRIPT
+                    </div>
+                    <div class="year">
+                        (2018-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus quam excepturi! Facilis eos ipsa sed sint, corrupti consectetur eveniet molestias repellat? Expedita ratione ab eum aliquid fuga eveniet repudiandae.
+                    </div>
+                </div><div class="vertical">
+                    <img class="image-top" src="youtube.png" alt="youtube image" >
+                    <div class="vertical-title">
+                        Youtube
+                    </div>
+                    <div class="year">
+                        (2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus quam excepturi! Facilis eos ipsa sed sint, corrupti consectetur eveniet molestias repellat? Expedita ratione ab eum aliquid fuga eveniet repudiandae.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Prashant's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center">
+            Copyright &#169; prashantportfolio.com | All Rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Java Developer', 'Video Editor.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
