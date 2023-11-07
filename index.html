@@ -9,18 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
             <div class="left">Prashant's Portfolio</div>
             <div class="right">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Service</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="/">Service</a></li> -->
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </div>
         </nav>
     </header>
@@ -35,8 +39,9 @@
                   <!-- Element to contain animated typing -->
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    
+                    <button class="btn">Resume</button>
+                    <button class="btn" onclick="window.open('https://github.com/prashant2599py', '_blank')">Visit Github</button>
                 </div>
             </div>
             <div class="rightSection">
@@ -54,8 +59,8 @@
                     </div>
                     <div class="about-col-2">
                         <h1>About Me</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, 
-                            ad architecto tenetur a quos iure, nesciunt, laborum veniam nihil fugiat iste qui similique.
+                        <p>I'm a passionate and hardworking with positive attitude Java Developer, I'd done few internships during my college, on the same tech stack.
+                            And now I'm looking forward to work on same to expand my knowledge.  
                         </p>
 
                         <div class="tab-titles">
@@ -72,8 +77,10 @@
 
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>Internship</span><br>Java Spring/Spring-Boot Development</li>
                                 <li><span>2022 - 2023</span><br>Java BackEnd Development</li>
+                                <li><span>Intern (June'22 - Aug'22)</span><br>Java, Spring/Spring-Boot Development</li>
+                                <li><span>Intern (May'21 - July'21)</span><br>Website Development</li>
+                                
                                 
                             </ul>
                         </div>
@@ -81,19 +88,75 @@
                         <div class="tab-contents" id="education">
                             <ul>
                                 <li><span>Grad. 2018 - 2022</span><br>B-Tech (CSE)</li>
-                                <li><span>2018</span><br>Intermediate</li>
-                                <li><span>2016</span><br>High-School</li>
+                                <li><span>2016 - 2018</span><br>Intermediate</li>
+                                <li><span>2014 - 2016</span><br>High-School</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="secondSection">
+
+        <!-- Contact Me -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> prashantlodhi2599@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +918273441901</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>   
+                        </div>
+                        <a href="Updated Resume.pdf" class="btn btn2" download>Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="mail" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; by Prashant, Made with <i class="fa-solid fa-heart"></i> by Prashant Lodhi </p>
+            </div>
+        </div>
+        <!-- <section class="secondSection">
             <span class="gray">What I have done till</span>
             <h1>Work Experience</h1>
 
             <div class="horizontal-Line">
+                
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="html Developer img" >
+                    <div class="vertical-title">
+                        Internship
+                    </div>
+                    <div class="year">
+                        (May'21 - June'21)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus quam excepturi! Facilis eos ipsa sed sint, corrupti consectetur eveniet molestias repellat? Expedita ratione ab eum aliquid fuga eveniet repudiandae.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="html Developer img" >
+                    <div class="vertical-title">
+                        Internship
+                    </div>
+                    <div class="year">
+                        (June'22 - Aug'22)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus quam excepturi! Facilis eos ipsa sed sint, corrupti consectetur eveniet molestias repellat? Expedita ratione ab eum aliquid fuga eveniet repudiandae.
+                    </div>
+                </div>
                 <div class="vertical">
                     <img class="image-top" src="java.png" alt="Developer image" >
                     <div class="vertical-title">
@@ -107,28 +170,6 @@
                     </div>
                 </div>
                 <div class="vertical">
-                    <img class="image-top" src="html.png" alt="html Developer img" >
-                    <div class="vertical-title">
-                        HTML Developer
-                    </div>
-                    <div class="year">
-                        (2018-2023)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus quam excepturi! Facilis eos ipsa sed sint, corrupti consectetur eveniet molestias repellat? Expedita ratione ab eum aliquid fuga eveniet repudiandae.
-                    </div>
-                </div><div class="vertical">
-                    <img class="image-top" src="javascript.png" alt="javascript Developer image" >
-                    <div class="vertical-title">
-                        JAVASCRIPT
-                    </div>
-                    <div class="year">
-                        (2018-2023)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus quam excepturi! Facilis eos ipsa sed sint, corrupti consectetur eveniet molestias repellat? Expedita ratione ab eum aliquid fuga eveniet repudiandae.
-                    </div>
-                </div><div class="vertical">
                     <img class="image-top" src="youtube.png" alt="youtube image" >
                     <div class="vertical-title">
                         Youtube
@@ -137,14 +178,14 @@
                         (2022)
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minus quam excepturi! Facilis eos ipsa sed sint, corrupti consectetur eveniet molestias repellat? Expedita ratione ab eum aliquid fuga eveniet repudiandae.
+                        Currently doing the challenges being to get somewhere , that challenges usually motivates me to do more or more of my potential. And I'm enjoying this challenge. 
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
         <div class="footer">
             <div class="footer-first">
                 <h3>Prashant's Developer Portfolio</h3>
@@ -153,7 +194,7 @@
                 <ul>
                     <li>Home</li>
                     <li>About</li>
-                    <li>Service</li>
+                    
                     <li>Contact</li>
                 </ul>
             </div>
@@ -161,7 +202,7 @@
                 <ul>
                     <li>Home</li>
                     <li>About</li>
-                    <li>Service</li>
+                    
                     <li>Contact</li>
                 </ul>
             </div>
@@ -169,7 +210,7 @@
                 <ul>
                     <li>Home</li>
                     <li>About</li>
-                    <li>Service</li>
+                    
                     <li>Contact</li>
                 </ul>
             </div>
@@ -177,7 +218,7 @@
         <div class="text-center">
             Copyright &#169; prashantportfolio.com | All Rights reserved
         </div>
-    </footer>
+    </footer> -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
   <script>
@@ -208,6 +249,38 @@
     }
 
 
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+  </script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+    function sendEmail(){
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "username",
+        Password : "password",
+        To : 'them@website.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+    }
   </script>
 </body>
 </html>
